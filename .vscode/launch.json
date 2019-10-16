@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/js/server.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server debug",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "start"
+            ],
+            "port": 9229
+        },  
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Load debug",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "load"
+            ],
+            "port": 9229
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "side_effects",
+  "version": "0.0.1",
+  "description": "Project",
+  "main": "js/server.js",
+  "author": "Priya",
+  "license": "MIT",
+  "scripts": {
+    "start": "node js/server.js",
+    "load": "node --max-old-space-size=6144 -e 'require(\"./js/server.js\").processFiles()'"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.0"
+  }
+}
